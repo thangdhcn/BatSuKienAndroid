@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Tru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_Cong"
+        android:layout_centerHorizontal="true"
+        android:text="Trừ" />
+
+    <Button
+        android:id="@+id/btn_Cong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="164dp"
+        android:text="Cộng" />
+
+    <Button
+        android:id="@+id/btn_Thoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_B"
+        android:layout_alignTop="@+id/btn_Tru"
+        android:text="Thoat" />
+
+
+    <EditText
+        android:id="@+id/edt_A"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="Nhập số A" />
+
+    <EditText
+        android:id="@+id/edt_B"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edt_A"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@+id/edt_A"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"
+        android:hint="Nhập số B"/>
+
+    <TextView
+        android:id="@+id/tv_KetQua"
+        android:layout_width="224dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:textColor="@color/MauXanh"
+        android:background="@color/MauXanhNen"
+        android:textSize="30sp"/>
+
+
+</RelativeLayout>
